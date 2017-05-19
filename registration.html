@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>REGISTRATION PAGE</title>
+    <style>
+        body{
+            
+            background-color: floralwhite;
+            
+
+        }
+        form{
+            background-color: darkseagreen;
+            border:solid;       
+            width: 25%;
+            padding-left: 40;
+            padding-bottom: 30;
+            
+        }
+       
+        .checkbox{
+            padding-left: 20 ;
+        }
+        h3,h4{
+            text-align: center;
+            color: blueviolet;
+        }
+        
+      
+    
+    </style>
+    </head>
+    
+    <body>
+        <form method="post" action="details.php">
+            <h3>CONTACT DETAILS</h3>
+            <h4>Your data are secure with us</h4>
+            <hr width=50%>
+            <div><table>
+                <tr>
+                    <td><label>Name</label></td><td><input type="text" name="name" size="20"></td></tr>
+                <tr>
+                    <td><label>Email</label></td><td><input type="email" name="email"></td></tr>
+                <tr>
+                    <td><label>Password</label></td><td><input type="password" name="password"></td></tr>
+                <tr>
+                    <td><label>Age</label></td><td><input type="text" name="age" size="20"></td></tr>
+                <tr>
+                <td><label>Phone</label></td><td><input type="text" name="phone"></td></tr>
+
+
+            <tr>
+                <td><label>Gender</label></td><td><input type="radio" name="gender" value="Male" checked>Male<br>
+                <input type="radio" name="gender" value="Female">Female</td></tr>
+        
+            
+            <tr><td><label>Post:</label></td>
+            <td><select name="post">
+            <option >Manager</option>
+            <option >Engineer</option>
+            <option >Project Head</option>
+            <option >Intern</option>
+                </select></td></tr>
+                
+                <br><br>
+            <tr><td><label>Address</label></td>
+               <td><textarea name="address"></textarea></td> </tr><br><br>
+            <tr><td><label>Description</label></td>
+           <td><textarea name="description" rows="5" cols="20"></textarea></td> </tr>
+            </table></div><br><br>
+            <button>
+                Submit
+            </button>
+            
+        </form>
+    
+    </body>
+</html>
